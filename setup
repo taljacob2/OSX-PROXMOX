@@ -316,7 +316,7 @@ do
 			--bios ovmf \
 			--boot 'order=ide0;sata0' \
 			--cores ${PROC_COUNT} \
-			--description ' Hackintosh VM - High Sierra' \
+			--description ' MacOS VM - High Sierra' \
 			--efidisk0 ${STORAGECRTVM}:4 \
 			--machine q35 \
 			--memory ${RAM_SIZE} \
@@ -356,7 +356,7 @@ do
 			--bios ovmf \
 			--boot 'order=ide0;sata0' \
 			--cores ${PROC_COUNT} \
-			--description ' Hackintosh VM - High Sierra' \
+			--description ' MacOS VM - High Sierra' \
 			--efidisk0 ${STORAGECRTVM}:4 \
 			--machine q35 \
 			--memory ${RAM_SIZE} \
@@ -506,7 +506,7 @@ do
 			--bios ovmf \
 			--boot 'order=ide0;sata0' \
 			--cores ${PROC_COUNT} \
-			--description ' Hackintosh VM - Mojave' \
+			--description ' MacOS VM - Mojave' \
 			--efidisk0 ${STORAGECRTVM}:4 \
 			--machine q35 \
 			--memory ${RAM_SIZE} \
@@ -546,7 +546,7 @@ do
 			--bios ovmf \
 			--boot 'order=ide0;sata0' \
 			--cores ${PROC_COUNT} \
-			--description ' Hackintosh VM - Mojave' \
+			--description ' MacOS VM - Mojave' \
 			--efidisk0 ${STORAGECRTVM}:4 \
 			--machine q35 \
 			--memory ${RAM_SIZE} \
@@ -696,7 +696,7 @@ do
 			--bios ovmf \
 			--boot 'order=ide0;virtio0' \
 			--cores ${PROC_COUNT} \
-			--description ' Hackintosh VM - Catalina' \
+			--description ' MacOS VM - Catalina' \
 			--efidisk0 ${STORAGECRTVM}:4 \
 			--machine q35 \
 			--memory ${RAM_SIZE} \
@@ -736,7 +736,7 @@ do
 			--bios ovmf \
 			--boot 'order=ide0;virtio0' \
 			--cores ${PROC_COUNT} \
-			--description ' Hackintosh VM - Catalina' \
+			--description ' MacOS VM - Catalina' \
 			--efidisk0 ${STORAGECRTVM}:4 \
 			--machine q35 \
 			--memory ${RAM_SIZE} \
@@ -886,7 +886,7 @@ do
 			--bios ovmf \
 			--boot 'order=ide0;virtio0' \
 			--cores ${PROC_COUNT} \
-			--description ' Hackintosh VM - Big Sur' \
+			--description ' MacOS VM - Big Sur' \
 			--efidisk0 ${STORAGECRTVM}:4 \
 			--machine q35 \
 			--memory ${RAM_SIZE} \
@@ -926,7 +926,7 @@ do
 			--bios ovmf \
 			--boot 'order=ide0;virtio0' \
 			--cores ${PROC_COUNT} \
-			--description ' Hackintosh VM - Big Sur' \
+			--description ' MacOS VM - Big Sur' \
 			--efidisk0 ${STORAGECRTVM}:4 \
 			--machine q35 \
 			--memory ${RAM_SIZE} \
@@ -1076,7 +1076,7 @@ do
 			--bios ovmf \
 			--boot 'order=ide0;virtio0' \
 			--cores ${PROC_COUNT} \
-			--description ' Hackintosh VM - Monterey' \
+			--description ' MacOS VM - Monterey' \
 			--efidisk0 ${STORAGECRTVM}:4 \
 			--machine q35 \
 			--memory ${RAM_SIZE} \
@@ -1116,7 +1116,7 @@ do
 			--bios ovmf \
 			--boot 'order=ide0;virtio0' \
 			--cores ${PROC_COUNT} \
-			--description ' Hackintosh VM - Monterey' \
+			--description ' MacOS VM - Monterey' \
 			--efidisk0 ${STORAGECRTVM}:4 \
 			--machine q35 \
 			--memory ${RAM_SIZE} \
@@ -1266,7 +1266,7 @@ do
 			--bios ovmf \
 			--boot 'order=ide0;virtio0' \
 			--cores ${PROC_COUNT} \
-			--description ' Hackintosh VM - Ventura' \
+			--description ' MacOS VM - Ventura' \
 			--efidisk0 ${STORAGECRTVM}:4 \
 			--machine q35 \
 			--memory ${RAM_SIZE} \
@@ -1306,7 +1306,7 @@ do
 			--bios ovmf \
 			--boot 'order=ide0;virtio0' \
 			--cores ${PROC_COUNT} \
-			--description ' Hackintosh VM - Ventura' \
+			--description ' MacOS VM - Ventura' \
 			--efidisk0 ${STORAGECRTVM}:4 \
 			--machine q35 \
 			--memory ${RAM_SIZE} \
@@ -1456,7 +1456,7 @@ do
 			--bios ovmf \
 			--boot 'order=ide0;virtio0' \
 			--cores ${PROC_COUNT} \
-			--description ' Hackintosh VM - Sonoma' \
+			--description ' MacOS VM - Sonoma' \
 			--efidisk0 ${STORAGECRTVM}:4 \
 			--machine q35 \
 			--memory ${RAM_SIZE} \
@@ -1496,7 +1496,7 @@ do
 			--bios ovmf \
 			--boot 'order=ide0;virtio0' \
 			--cores ${PROC_COUNT} \
-			--description ' Hackintosh VM - Sonoma' \
+			--description ' MacOS VM - Sonoma' \
 			--efidisk0 ${STORAGECRTVM}:4 \
 			--machine q35 \
 			--memory ${RAM_SIZE} \
