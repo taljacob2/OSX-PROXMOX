@@ -50,7 +50,7 @@ TMPDIR=${SCRIPT_DIR}/tmp
 ISODIR=/var/lib/vz/template/iso/
 HACKPXVERSION="20240313T1034"
 OCVERSION="0.9.9"
-DEFAULT_VM_PREFIX="HACK-"
+DEFAULT_VM_PREFIX="MacOS-"
 DEFAULT_RAM_SIZE=4096
 
 if [ `lscpu | grep "Vendor ID" | grep -i amd | wc -l` -eq 1 ]; then OSX_PLATFORM="AMD"; else OSX_PLATFORM="INTEL"; fi
@@ -219,7 +219,7 @@ do
 		if [ -z $VM_ID ]; then VM_ID=$NEXTID; fi;
 
 		echo " "
-		echo -n "Enter VM Name [or ENTER for Default: HACK-HIGHSIERRA]: "
+		echo -n "Enter VM Name [or ENTER for Default: MacOS-HIGHSIERRA]: "
 		read VM_NAME
 
 		if [ -z $VM_NAME ]; then VM_NAME="${DEFAULT_VM_PREFIX}HIGHSIERRA"; fi;
@@ -409,7 +409,7 @@ do
 		if [ -z $VM_ID ]; then VM_ID=$NEXTID; fi;
 
 		echo " "
-		echo -n "Enter VM Name [or ENTER for Default: HACK-MOJAVE]: "
+		echo -n "Enter VM Name [or ENTER for Default: MacOS-MOJAVE]: "
 		read VM_NAME
 
 		if [ -z $VM_NAME ]; then VM_NAME="${DEFAULT_VM_PREFIX}MOJAVE"; fi;
@@ -599,7 +599,7 @@ do
 		if [ -z $VM_ID ]; then VM_ID=$NEXTID; fi;
 
 		echo " "
-		echo -n "Enter VM Name [or ENTER for Default: HACK-CATALINA]: "
+		echo -n "Enter VM Name [or ENTER for Default: MacOS-CATALINA]: "
 		read VM_NAME
 
 		if [ -z $VM_NAME ]; then VM_NAME="${DEFAULT_VM_PREFIX}CATALINA"; fi;
@@ -789,7 +789,7 @@ do
 		if [ -z $VM_ID ]; then VM_ID=$NEXTID; fi;
 
 		echo " "
-		echo -n "Enter VM Name [or ENTER for Default: HACK-BIGSUR]: "
+		echo -n "Enter VM Name [or ENTER for Default: MacOS-BIGSUR]: "
 		read VM_NAME
 
 		if [ -z $VM_NAME ]; then VM_NAME="${DEFAULT_VM_PREFIX}BIG-SUR"; fi;
@@ -979,7 +979,7 @@ do
 		if [ -z $VM_ID ]; then VM_ID=$NEXTID; fi;
 
 		echo " "
-		echo -n "Enter VM Name [or ENTER for Default: HACK-MONTEREY]: "
+		echo -n "Enter VM Name [or ENTER for Default: MacOS-MONTEREY]: "
 		read VM_NAME
 
 		if [ -z $VM_NAME ]; then VM_NAME="${DEFAULT_VM_PREFIX}MONTEREY"; fi;
@@ -1169,7 +1169,7 @@ do
 		if [ -z $VM_ID ]; then VM_ID=$NEXTID; fi;
 
 		echo " "
-		echo -n "Enter VM Name [or ENTER for Default: HACK-VENTURA]: "
+		echo -n "Enter VM Name [or ENTER for Default: MacOS-VENTURA]: "
 		read VM_NAME
 
 		if [ -z $VM_NAME ]; then VM_NAME="${DEFAULT_VM_PREFIX}VENTURA"; fi;
@@ -1359,7 +1359,7 @@ do
 		if [ -z $VM_ID ]; then VM_ID=$NEXTID; fi;
 
 		echo " "
-		echo -n "Enter VM Name [or ENTER for Default: HACK-SONOMA]: "
+		echo -n "Enter VM Name [or ENTER for Default: MacOS-SONOMA]: "
 		read VM_NAME
 
 		if [ -z $VM_NAME ]; then VM_NAME="${DEFAULT_VM_PREFIX}SONOMA"; fi;
