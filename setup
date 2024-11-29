@@ -50,7 +50,7 @@ TMPDIR=${SCRIPT_DIR}/tmp
 ISODIR=/var/lib/vz/template/iso/
 HACKPXVERSION="20241025T1034"
 OCVERSION="1.0.2"
-DEFAULT_VM_PREFIX="HACK-"
+DEFAULT_VM_PREFIX="MacOS-"
 DEFAULT_RAM_SIZE=4096
 
 if [ `lscpu | grep "Vendor ID" | grep -i amd | wc -l` -eq 1 ]; then OSX_PLATFORM="AMD"; else OSX_PLATFORM="INTEL"; fi
@@ -220,7 +220,7 @@ do
 		if [ -z $VM_ID ]; then VM_ID=$NEXTID; fi;
 
 		echo " "
-		echo -n "Enter VM Name [or ENTER for Default: HACK-HIGHSIERRA]: "
+		echo -n "Enter VM Name [or ENTER for Default: MacOS-HIGHSIERRA]: "
 		read VM_NAME
 
 		if [ -z $VM_NAME ]; then VM_NAME="${DEFAULT_VM_PREFIX}HIGHSIERRA"; fi;
@@ -317,7 +317,7 @@ do
 			--bios ovmf \
 			--boot 'order=ide0;sata0' \
 			--cores ${PROC_COUNT} \
-			--description ' Hackintosh VM - High Sierra' \
+			--description ' MacOS VM - High Sierra' \
 			--efidisk0 ${STORAGECRTVM}:4 \
 			--machine q35 \
 			--memory ${RAM_SIZE} \
@@ -357,7 +357,7 @@ do
 			--bios ovmf \
 			--boot 'order=ide0;sata0' \
 			--cores ${PROC_COUNT} \
-			--description ' Hackintosh VM - High Sierra' \
+			--description ' MacOS VM - High Sierra' \
 			--efidisk0 ${STORAGECRTVM}:4 \
 			--machine q35 \
 			--memory ${RAM_SIZE} \
@@ -410,7 +410,7 @@ do
 		if [ -z $VM_ID ]; then VM_ID=$NEXTID; fi;
 
 		echo " "
-		echo -n "Enter VM Name [or ENTER for Default: HACK-MOJAVE]: "
+		echo -n "Enter VM Name [or ENTER for Default: MacOS-MOJAVE]: "
 		read VM_NAME
 
 		if [ -z $VM_NAME ]; then VM_NAME="${DEFAULT_VM_PREFIX}MOJAVE"; fi;
@@ -507,7 +507,7 @@ do
 			--bios ovmf \
 			--boot 'order=ide0;sata0' \
 			--cores ${PROC_COUNT} \
-			--description ' Hackintosh VM - Mojave' \
+			--description ' MacOS VM - Mojave' \
 			--efidisk0 ${STORAGECRTVM}:4 \
 			--machine q35 \
 			--memory ${RAM_SIZE} \
@@ -547,7 +547,7 @@ do
 			--bios ovmf \
 			--boot 'order=ide0;sata0' \
 			--cores ${PROC_COUNT} \
-			--description ' Hackintosh VM - Mojave' \
+			--description ' MacOS VM - Mojave' \
 			--efidisk0 ${STORAGECRTVM}:4 \
 			--machine q35 \
 			--memory ${RAM_SIZE} \
@@ -600,7 +600,7 @@ do
 		if [ -z $VM_ID ]; then VM_ID=$NEXTID; fi;
 
 		echo " "
-		echo -n "Enter VM Name [or ENTER for Default: HACK-CATALINA]: "
+		echo -n "Enter VM Name [or ENTER for Default: MacOS-CATALINA]: "
 		read VM_NAME
 
 		if [ -z $VM_NAME ]; then VM_NAME="${DEFAULT_VM_PREFIX}CATALINA"; fi;
@@ -697,7 +697,7 @@ do
 			--bios ovmf \
 			--boot 'order=ide0;virtio0' \
 			--cores ${PROC_COUNT} \
-			--description ' Hackintosh VM - Catalina' \
+			--description ' MacOS VM - Catalina' \
 			--efidisk0 ${STORAGECRTVM}:4 \
 			--machine q35 \
 			--memory ${RAM_SIZE} \
@@ -737,7 +737,7 @@ do
 			--bios ovmf \
 			--boot 'order=ide0;virtio0' \
 			--cores ${PROC_COUNT} \
-			--description ' Hackintosh VM - Catalina' \
+			--description ' MacOS VM - Catalina' \
 			--efidisk0 ${STORAGECRTVM}:4 \
 			--machine q35 \
 			--memory ${RAM_SIZE} \
@@ -790,7 +790,7 @@ do
 		if [ -z $VM_ID ]; then VM_ID=$NEXTID; fi;
 
 		echo " "
-		echo -n "Enter VM Name [or ENTER for Default: HACK-BIGSUR]: "
+		echo -n "Enter VM Name [or ENTER for Default: MacOS-BIGSUR]: "
 		read VM_NAME
 
 		if [ -z $VM_NAME ]; then VM_NAME="${DEFAULT_VM_PREFIX}BIG-SUR"; fi;
@@ -887,7 +887,7 @@ do
 			--bios ovmf \
 			--boot 'order=ide0;virtio0' \
 			--cores ${PROC_COUNT} \
-			--description ' Hackintosh VM - Big Sur' \
+			--description ' MacOS VM - Big Sur' \
 			--efidisk0 ${STORAGECRTVM}:4 \
 			--machine q35 \
 			--memory ${RAM_SIZE} \
@@ -927,7 +927,7 @@ do
 			--bios ovmf \
 			--boot 'order=ide0;virtio0' \
 			--cores ${PROC_COUNT} \
-			--description ' Hackintosh VM - Big Sur' \
+			--description ' MacOS VM - Big Sur' \
 			--efidisk0 ${STORAGECRTVM}:4 \
 			--machine q35 \
 			--memory ${RAM_SIZE} \
@@ -980,7 +980,7 @@ do
 		if [ -z $VM_ID ]; then VM_ID=$NEXTID; fi;
 
 		echo " "
-		echo -n "Enter VM Name [or ENTER for Default: HACK-MONTEREY]: "
+		echo -n "Enter VM Name [or ENTER for Default: MacOS-MONTEREY]: "
 		read VM_NAME
 
 		if [ -z $VM_NAME ]; then VM_NAME="${DEFAULT_VM_PREFIX}MONTEREY"; fi;
@@ -1077,7 +1077,7 @@ do
 			--bios ovmf \
 			--boot 'order=ide0;virtio0' \
 			--cores ${PROC_COUNT} \
-			--description ' Hackintosh VM - Monterey' \
+			--description ' MacOS VM - Monterey' \
 			--efidisk0 ${STORAGECRTVM}:4 \
 			--machine q35 \
 			--memory ${RAM_SIZE} \
@@ -1117,7 +1117,7 @@ do
 			--bios ovmf \
 			--boot 'order=ide0;virtio0' \
 			--cores ${PROC_COUNT} \
-			--description ' Hackintosh VM - Monterey' \
+			--description ' MacOS VM - Monterey' \
 			--efidisk0 ${STORAGECRTVM}:4 \
 			--machine q35 \
 			--memory ${RAM_SIZE} \
@@ -1170,7 +1170,7 @@ do
 		if [ -z $VM_ID ]; then VM_ID=$NEXTID; fi;
 
 		echo " "
-		echo -n "Enter VM Name [or ENTER for Default: HACK-VENTURA]: "
+		echo -n "Enter VM Name [or ENTER for Default: MacOS-VENTURA]: "
 		read VM_NAME
 
 		if [ -z $VM_NAME ]; then VM_NAME="${DEFAULT_VM_PREFIX}VENTURA"; fi;
@@ -1267,7 +1267,7 @@ do
 			--bios ovmf \
 			--boot 'order=ide0;virtio0' \
 			--cores ${PROC_COUNT} \
-			--description ' Hackintosh VM - Ventura' \
+			--description ' MacOS VM - Ventura' \
 			--efidisk0 ${STORAGECRTVM}:4 \
 			--machine q35 \
 			--memory ${RAM_SIZE} \
@@ -1307,7 +1307,7 @@ do
 			--bios ovmf \
 			--boot 'order=ide0;virtio0' \
 			--cores ${PROC_COUNT} \
-			--description ' Hackintosh VM - Ventura' \
+			--description ' MacOS VM - Ventura' \
 			--efidisk0 ${STORAGECRTVM}:4 \
 			--machine q35 \
 			--memory ${RAM_SIZE} \
@@ -1360,7 +1360,7 @@ do
 		if [ -z $VM_ID ]; then VM_ID=$NEXTID; fi;
 
 		echo " "
-		echo -n "Enter VM Name [or ENTER for Default: HACK-SONOMA]: "
+		echo -n "Enter VM Name [or ENTER for Default: MacOS-SONOMA]: "
 		read VM_NAME
 
 		if [ -z $VM_NAME ]; then VM_NAME="${DEFAULT_VM_PREFIX}SONOMA"; fi;
@@ -1457,7 +1457,7 @@ do
 			--bios ovmf \
 			--boot 'order=ide0;virtio0' \
 			--cores ${PROC_COUNT} \
-			--description ' Hackintosh VM - Sonoma' \
+			--description ' MacOS VM - Sonoma' \
 			--efidisk0 ${STORAGECRTVM}:4 \
 			--machine q35 \
 			--memory ${RAM_SIZE} \
@@ -1497,7 +1497,7 @@ do
 			--bios ovmf \
 			--boot 'order=ide0;virtio0' \
 			--cores ${PROC_COUNT} \
-			--description ' Hackintosh VM - Sonoma' \
+			--description ' MacOS VM - Sonoma' \
 			--efidisk0 ${STORAGECRTVM}:4 \
 			--machine q35 \
 			--memory ${RAM_SIZE} \
@@ -1550,7 +1550,7 @@ do
 		if [ -z $VM_ID ]; then VM_ID=$NEXTID; fi;
 
 		echo " "
-		echo -n "Enter VM Name [or ENTER for Default: HACK-SEQUOIA]: "
+		echo -n "Enter VM Name [or ENTER for Default: MacOS-SEQUOIA]: "
 		read VM_NAME
 
 		if [ -z $VM_NAME ]; then VM_NAME="${DEFAULT_VM_PREFIX}SEQUOIA"; fi;
@@ -1647,7 +1647,7 @@ do
 			--bios ovmf \
 			--boot 'order=ide0;virtio0' \
 			--cores ${PROC_COUNT} \
-			--description ' Hackintosh VM - Sequoia' \
+			--description ' MacOS VM - Sequoia' \
 			--efidisk0 ${STORAGECRTVM}:4 \
 			--machine q35 \
 			--memory ${RAM_SIZE} \
@@ -1687,7 +1687,7 @@ do
 			--bios ovmf \
 			--boot 'order=ide0;virtio0' \
 			--cores ${PROC_COUNT} \
-			--description ' Hackintosh VM - Sequoia' \
+			--description ' MacOS VM - Sequoia' \
 			--efidisk0 ${STORAGECRTVM}:4 \
 			--machine q35 \
 			--memory ${RAM_SIZE} \
